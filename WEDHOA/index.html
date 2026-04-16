@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Corner - Cửa Hàng Hoa Tươi Đẹp Nhất</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="#" class="logo">
+                    <i class="fas fa-seedling"></i>
+                    <span>Flower<span class="logo-accent">Corner</span></span>
+                </a>
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                        <li><a href="#products" class="nav-link">Sản phẩm</a></li>
+                        <li><a href="#categories" class="nav-link">Danh mục</a></li>
+                        <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+                        <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn" aria-label="Tìm kiếm">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn" aria-label="Giỏ hàng">
+                        <i class="fas fa-shopping-basket"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="mobile-menu-btn" aria-label="Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="close-menu"><i class="fas fa-times"></i></button>
+        <ul class="mobile-nav-list">
+            <li><a href="#home" class="mobile-nav-link">Trang chủ</a></li>
+            <li><a href="#products" class="mobile-nav-link">Sản phẩm</a></li>
+            <li><a href="#categories" class="mobile-nav-link">Danh mục</a></li>
+            <li><a href="#about" class="mobile-nav-link">Giới thiệu</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Liên hệ</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('images/hinh-nen-hoa-tulip-9.webp');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <span class="hero-subtitle"></span>
+                    <h1 class="hero-title">Hoa Tươi Cho<br>Mọi Dịp Đặc Biệt</h1>
+                    <p class="hero-desc">Tuyển chọn những bông hoa tươi đẹp nhất, giao hàng tận nơi nhanh chóng</p>
+                    <a href="#products" class="btn btn-primary">Xem sản phẩm</a>
+                </div>
+            </div>
+            <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?w=1920&q=80');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <span class="hero-subtitle">Ưu đãi đặc biệt</span>
+                    <h1 class="hero-title">Giảm Giá 20%<br>Cho Đơn Hàng Đầu Tiên</h1>
+                    <p class="hero-desc">Đặt ngay hôm nay để nhận ưu đãi đặc biệt dành riêng cho bạn</p>
+                    <a href="#products" class="btn btn-primary">Đặt ngay</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-nav">
+            <button class="hero-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="hero-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Giao Hàng Nhanh</h3>
+                        <p>Giao hàng tận nơi trong ngày</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Hoa Tươi 100%</h3>
+                        <p>Đảm bảo hoa tươi mới mỗi ngày</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Hỗ Trợ 24/7</h3>
+                        <p>Tư vấn và hỗ trợ mọi lúc</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Thiết Kế Độc Đáo</h3>
+                        <p>Mỗi bó hoa là một tác phẩm nghệ thuật</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Danh mục</span>
+                <h2 class="section-title">Khám Phá Các Loại Hoa</h2>
+                <p class="section-desc">Lựa chọn hoa phù hợp cho mọi dịp đặc biệt của bạn</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="images/hoasinhnhat.jpg" alt="Hoa sinh nhật">
+                    <div class="category-overlay">
+                        <h3>Hoa Sinh Nhật</h3>
+                        <a href="#products" class="category-link">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/HOA-CUOI-DEP.jpg" alt="Hoa cưới">
+                    <div class="category-overlay">
+                        <h3>Hoa Cưới</h3>
+                        <a href="#products" class="category-link">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card"></div>
+                images/tangme.jpg" alt="Hoa tặng mẹ">
+                    <div class="category-overlay">
+                        <h3>Hoa Tặng Mẹ</h3>
+                        <a href="#products" class="category-link">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/tinhyeu.webp" alt="Hoa tình yêu">
+                    <div class="category-overlay">
+                        <h3>Hoa Tình Yêu</h3>
+                        <a href="#products" class="category-link">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/hoa-khai-truong-dep-ha-noi-hoa-khai-truong-sang-trong.webp" alt="Hoa khai trương">
+                    <div class="category-overlay">
+                        <h3>Hoa Khai Trương</h3>
+                        <a href="#products" class="category-link">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="images/hoatang.jpg" alt="Hoa tang lễ">
+                    <div class="category-overlay">
+                        <h3>Hoa Tang Lễ</h3>
+                        <a href="#products" class="category-link">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Sản phẩm</span>
+                <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+                <p class="section-desc">Những mẫu hoa được yêu thích nhất của cửa hàng</p>
+            </div>
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="birthday">Hoa sinh nhật</button>
+                <button class="filter-btn" data-filter="wedding">Hoa cưới</button>
+                <button class="filter-btn" data-filter="gift">Hoa tặng</button>
+                <button class="filter-btn" data-filter="corporate">Hoa văn phòng</button>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-category="birthday">
+                    <div class="product-image">
+                        <img src="images/hoasinhnhat.jpg" alt="Phương Trâm">
+                        <div class="product-badge">Hot</div>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Yêu thích"><i class="far fa-heart"></i></button>
+                            <button class="action-btn" aria-label="Xem nhanh"><i class="far fa-eye"></i></button>
+                            <button class="action-btn" aria-label="So sánh"><i class="fas fa-balance-scale"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Hoa Hồng</span>
+                        <h3 class="product-name">Hoa Hồng Đỏ</h3>
+                        <div class="product-price">
+                            <span class="current-price" data-price="450000">450.000đ</span>
+                            <span class="original-price">550.000đ</span>
+                        </div>
+                        <div class="product-quantity">
+                            <label>Số lượng:</label>
+                            <div class="quantity-wrapper">
+                                <button class="qty-btn qty-minus">-</button>
+                                <input type="number" class="qty-input" value="1" min="1" max="99">
+                                <button class="qty-btn qty-plus">+</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="wedding">
+                    <div class="product-image">
+                        <img src="images/hoa-cam-chuong-06.jpg" alt="Hoa Cưới Cẩm Chướng">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Yêu thích"><i class="far fa-heart"></i></button>
+                            <button class="action-btn" aria-label="Xem nhanh"><i class="far fa-eye"></i></button>
+                            <button class="action-btn" aria-label="So sánh"><i class="fas fa-balance-scale"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Hoa cưới</span>
+                        <h3 class="product-name">Hoa Cưới Cẩm Chướng</h3>
+                        <div class="product-price">
+                            <span class="current-price" data-price="1200000">1.200.000đ</span>
+                        </div>
+                        <div class="product-quantity">
+                            <label>Số lượng:</label>
+                            <div class="quantity-wrapper">
+                                <button class="qty-btn qty-minus">-</button>
+                                <input type="number" class="qty-input" value="1" min="1" max="99">
+                                <button class="qty-btn qty-plus">+</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="gift">
+                    <div class="product-image">
+                        <img src="images/HOAHONGjpg.jpg" alt="Hoa Hồng Đỏ">
+                        <div class="product-badge">-20%</div>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Yêu thích"><i class="far fa-heart"></i></button>
+                            <button class="action-btn" aria-label="Xem nhanh"><i class="far fa-eye"></i></button>
+                            <button class="action-btn" aria-label="So sánh"><i class="fas fa-balance-scale"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Hoa tặng</span>
+                        <h3 class="product-name">Hoa Hồng Đỏ 99 Bông</h3>
+                        <div class="product-price">
+                            <span class="current-price">890.000đ</span>
+                            <span class="original-price">1.100.000đ</span>
+                        </div>
+                        <button class="btn btn-outline add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="birthday">
+                    <div class="product-image">
+                        <img src="images/lan-ho-diep-768x1024.jpg" alt="Hoa Lan Hồ Điệp">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Yêu thích"><i class="far fa-heart"></i></button>
+                            <button class="action-btn" aria-label="Xem nhanh"><i class="far fa-eye"></i></button>
+                            <button class="action-btn" aria-label="So sánh"><i class="fas fa-balance-scale"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Hoa sinh nhật</span>
+                        <h3 class="product-name">Hoa Lan Hồ Điệp</h3>
+                        <div class="product-price">
+                            <span class="current-price">650.000đ</span>
+                        </div>
+                        <button class="btn btn-outline add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="corporate">
+                    <div class="product-image">
+                        <img src="images/CHUCMUNGjpg.jpg" alt="Hoa Chúc Mừng">
+                        <div class="product-badge">New</div>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Yêu thích"><i class="far fa-heart"></i></button>
+                            <button class="action-btn" aria-label="Xem nhanh"><i class="far fa-eye"></i></button>
+                            <button class="action-btn" aria-label="So sánh"><i class="fas fa-balance-scale"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Hoa văn phòng</span>
+                        <h3 class="product-name">Hoa Chúc Mừng</h3>
+                        <div class="product-price">
+                            <span class="current-price">380.000đ</span>
+                        </div>
+                        <button class="btn btn-outline add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="wedding">
+                    <div class="product-image">
+                        <img src="images/bo-hoa-cuoi-tulip-hong-hoa-cuoi-cam-tay-dep.webp" alt="Hoa Cưới Hoa Tulip">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Yêu thích"><i class="far fa-heart"></i></button>
+                            <button class="action-btn" aria-label="Xem nhanh"><i class="far fa-eye"></i></button>
+                            <button class="action-btn" aria-label="So sánh"><i class="fas fa-balance-scale"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Hoa cưới</span>
+                        <h3 class="product-name">Hoa Cưới Hoa Tulip</h3>
+                        <div class="product-price">
+                            <span class="current-price">1.500.000đ</span>
+                        </div>
+                        <button class="btn btn-outline add-to-cart">Thêm into giỏ</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="gift">
+                    <div class="product-image">
+                        <img src="images/White-Rose-3-2.jpg" alt="Hoa Hồng Bạch">
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Yêu thích"><i class="far fa-heart"></i></button>
+                            <button class="action-btn" aria-label="Xem nhanh"><i class="far fa-eye"></i></button>
+                            <button class="action-btn" aria-label="So sánh"><i class="fas fa-balance-scale"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Hoa tặng</span>
+                        <h3 class="product-name">Hoa Hồng Bạch Mix</h3>
+                        <div class="product-price">
+                            <span class="current-price">520.000đ</span>
+                        </div>
+                        <button class="btn btn-outline add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="birthday">
+                    <div class="product-image">
+                        <img src="images/anh-bong-hoa-huong-duong-dep_112954455.jpg" alt="Hoa Hướng Dương">
+                        <div class="product-badge">Hot</div>
+                        <div class="product-actions">
+                            <button class="action-btn" aria-label="Yêu thích"><i class="far fa-heart"></i></button>
+                            <button class="action-btn" aria-label="Xem nhanh"><i class="far fa-eye"></i></button>
+                            <button class="action-btn" aria-label="So sánh"><i class="fas fa-balance-scale"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Hoa sinh nhật</span>
+                        <h3 class="product-name">Bó Hoa Hướng Dương</h3>
+                        <div class="product-price">
+                            <span class="current-price">420.000đ</span>
+                        </div>
+                        <button class="btn btn-outline add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="products-more">
+                <a href="#products" class="btn btn-secondary">Xem tất cả sản phẩm</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=800&q=80" alt="Về Flower Corner">
+                    <div class="about-experience">
+                        <span class="experience-number">10+</span>
+                        <span class="experience-text">Năm kinh nghiệm</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-subtitle">Về chúng tôi</span>
+                    <h2 class="section-title">Flower Corner - Cửa Hàng Hoa Tươi Uy Tín</h2>
+                    <p class="about-desc">Flower Corner tự hào là một trong những cửa hàng hoa tươi hàng đầu Việt Nam với hơn 10 năm kinh nghiệm trong lĩnh vực kinh doanh hoa tươi. Chúng tôi cam kết mang đến cho khách hàng những bông hoa tươi đẹp nhất, được tuyển chọn kỹ lưỡng từ các vườn hoa uy tín.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Hoa tươi 100% nhập mới mỗi ngày</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Đội ngũ florist chuyên nghiệp</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Giao hàng nhanh chóng tận nơi</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Thiết kế hoa theo yêu cầu</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Liên hệ ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner-bg" style="background-image: url('https://images.unsplash.com/photo-1508615039623-a25605d2b022?w=1920&q=80');">
+            <div class="banner-overlay"></div>
+            <div class="container">
+                <div class="banner-content">
+                    <span class="banner-subtitle">Đặt hàng ngay</span>
+                    <h2 class="banner-title">Nhận Ưu Đãi 20%<br>Cho Đơn Hàng Đầu Tiên</h2>
+                    <p class="banner-desc">Sử dụng mã: FLOWER20</p>
+                    <a href="#products" class="btn btn-white">Đặt ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Đánh giá</span>
+                <h2 class="section-title">Khách Hàng Nói Gì</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Khách hàng">
+                        <div class="testimonial-info">
+                            <h4>Nguyễn Thị Hương</h4>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Hoa rất đẹp và tươi, giao hàng đúng giờ. Cửa hàng phục vụ rất nhiệt tình. Tôi sẽ ủng hộ lâu dài!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Khách hàng">
+                        <div class="testimonial-info">
+                            <h4>Trần Văn Minh</h4>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Đặt hoa sinh nhật vợ rất ưng ý. Hoa đẹp, thiết kế tinh tế. Cảm ơn Flower Corner!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Khách hàng">
+                        <div class="testimonial-info">
+                            <h4>Lê Thị Mai</h4>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Cửa hàng hoa uy tín nhất mà tôi từng mua. Hoa luôn tươi và đẹp. Giá cả hợp lý!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Liên hệ</span>
+                <h2 class="section-title">Liên Hệ Với Chúng Tôi</h2>
+                <p class="section-desc">Hãy liên hệ với chúng tôi để được tư vấn và đặt hoa ngay hôm nay</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Địa chỉ</h3>
+                            <p>123 Đường Nguyễn Trãi, Quận 1, TP. Hồ Chí Minh</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Điện thoại</h3>
+                            <p>+84 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@flowercorner.vn</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Giờ mở cửa</h3>
+                            <p>7:00 - 21:00 (Tất cả các ngày)</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Zalo"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Họ và tên" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Số điện thoại" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="">Chọn dịch vụ</option>
+                                <option value="order">Đặt hoa</option>
+                                <option value="consult">Tư vấn</option>
+                                <option value="feedback">Góp ý</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Nội dung tin nhắn" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Gửi tin nhắn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.509683688812!2d106.68685431474936!3d10.771991792314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3a0a0a0a0b%3A0x0!2zMTIzIMSQLiBOZ3V54buFbiBUcuG7jSwgUGjGsOG7nW5nIDEsIFRQLkhPSC!5e0!3m2!1svi!2s!4v1234567890"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <a href="#" class="footer-logo">
+                            <i class="fas fa-seedling"></i>
+                            <span>Flower<span>Corner</span></span>
+                        </a>
+                        <p class="footer-desc">Cửa hàng hoa tươi uy tín hàng đầu Việt Nam. Mang đến vẻ đẹp và hạnh phúc qua những bông hoa tươi đẹp nhất.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3 class="footer-title">Liên kết nhanh</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home">Trang chủ</a></li>
+                            <li><a href="#products">Sản phẩm</a></li>
+                            <li><a href="#categories">Danh mục</a></li>
+                            <li><a href="#about">Giới thiệu</a></li>
+                            <li><a href="#contact">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3 class="footer-title">Danh mục sản phẩm</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Hoa sinh nhật</a></li>
+                            <li><a href="#">Hoa cưới</a></li>
+                            <li><a href="#">Hoa tặng mẹ</a></li>
+                            <li><a href="#">Hoa tình yêu</a></li>
+                            <li><a href="#">Hoa khai trương</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3 class="footer-title">Newsletter</h3>
+                        <p class="footer-desc">Đăng ký để nhận tin tức và ưu đãi mới nhất</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Nhập email của bạn">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-wrapper">
+                    <p>&copy; 2024 Flower Corner. All rights reserved.</p>
+                    <div class="footer-payment">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Lên đầu trang">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

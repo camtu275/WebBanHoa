@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán - Flower Corner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-seedling"></i>
+                    <span>Flower<span class="logo-accent">Corner</span></span>
+                </a>
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+                        <li><a href="index.html#products" class="nav-link">Sản phẩm</a></li>
+                        <li><a href="index.html#about" class="nav-link">Giới thiệu</a></li>
+                        <li><a href="index.html#contact" class="nav-link">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-wrapper">
+                <!-- Checkout Form -->
+                <div class="checkout-form-container">
+                    <h2 class="checkout-title">Thông tin thanh toán</h2>
+                    <form class="checkout-form" id="checkoutForm">
+                        <!-- Thông tin khách hàng -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-user"></i> Thông tin khách hàng</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullname">Họ và tên <span class="required">*</span></label>
+                                    <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Số điện thoại <span class="required">*</span></label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email" required>
+                            </div>
+                        </div>
+
+                        <!-- Địa chỉ giao hàng -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-map-marker-alt"></i> Địa chỉ giao hàng</h3>
+                            <div class="form-group">
+                                <label for="address">Địa chỉ <span class="required">*</span></label>
+                                <input type="text" id="address" name="address" placeholder="Nhập địa chỉ chi tiết (số nhà, đường, phường/xã, quận/huyện, thành phố)" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="province">Tỉnh/Thành phố</label>
+                                    <select id="province" name="province">
+                                        <option value="">Chọn Tỉnh/Thành phố</option>
+                                        <option value="hcm">TP. Hồ Chí Minh</option>
+                                        <option value="hn">TP. Hà Nội</option>
+                                        <option value="dn">TP. Đà Nẵng</option>
+                                        <option value="hp">TP. Hải Phòng</option>
+                                        <option value="ct">TP. Cần Thơ</option>
+                                        <option value="other">Tỉnh/Thành khác</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="district">Quận/Huyện</label>
+                                    <select id="district" name="district">
+                                        <option value="">Chọn Quận/Huyện</option>
+                                        <option value="1">Quận 1</option>
+                                        <option value="3">Quận 3</option>
+                                        <option value="5">Quận 5</option>
+                                        <option value="7">Quận 7</option>
+                                        <option value="10">Quận 10</option>
+                                        <option value="other">Quận/Huyện khác</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hình thức thanh toán -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-credit-card"></i> Hình thức thanh toán</h3>
+                            <div class="payment-methods">
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="cod" checked>
+                                    <div class="payment-content">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        <div class="payment-info">
+                                            <span class="payment-title">Thanh toán khi nhận hàng (COD)</span>
+                                            <span class="payment-desc">Quý khách sẽ thanh toán tiền mặt khi nhận được hàng</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="atm">
+                                    <div class="payment-content">
+                                        <i class="fas fa-credit-card"></i>
+                                        <div class="payment-info">
+                                            <span class="payment-title">Thanh toán bằng thẻ ATM</span>
+                                            <span class="payment-desc">Thanh toán trực tuyến qua thẻ ATM nội địa</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="visa">
+                                    <div class="payment-content">
+                                        <i class="fab fa-cc-visa"></i>
+                                        <div class="payment-info">
+                                            <span class="payment-title">Thanh toán bằng thẻ Visa/Mastercard</span>
+                                            <span class="payment-desc">Thanh toán trực tuyến qua thẻ quốc tế</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Thông tin thẻ (khi chọn thanh toán online) -->
+                        <div class="form-section card-details" id="cardDetails" style="display: none;">
+                            <h3><i class="fas fa-lock"></i> Thông tin thẻ</h3>
+                            <div class="form-group">
+                                <label for="cardNumber">Số thẻ</label>
+                                <input type="text" id="cardNumber" placeholder="Nhập số thẻ (16 số)" maxlength="19">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="cardName">Tên chủ thẻ</label>
+                                    <input type="text" id="cardName" placeholder="Tên in trên thẻ">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cardExpiry">Ngày hết hạn</label>
+                                    <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cardCVV">CVV</label>
+                                    <input type="text" id="cardCVV" placeholder="3 số sau thẻ" maxlength="3">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ghi chú đơn hàng -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-sticky-note"></i> Ghi chú đơn hàng</h3>
+                            <div class="form-group">
+                                <textarea name="note" placeholder="Ghi chú về đơn hàng, thời gian giao hàng mong muốn..." rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full btn-checkout">
+                            <i class="fas fa-check-circle"></i> Xác nhận đặt hàng
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h2 class="checkout-title">Đơn hàng của bạn</h2>
+                    <div class="summary-products" id="summaryProducts">
+                        <!-- Products will be populated by JavaScript -->
+                    </div>
+                    <div class="summary-totals">
+                        <div class="summary-row">
+                            <span>Tạm tính:</span>
+                            <span id="subtotal">0đ</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Phí vận chuyển:</span>
+                            <span id="shipping">30.000đ</span>
+                        </div>
+                        <div class="summary-row discount" id="discountRow" style="display: none;">
+                            <span>Giảm giá:</span>
+                            <span id="discount">-0đ</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Tổng cộng:</span>
+                            <span id="total">0đ</span>
+                        </div>
+                    </div>
+                    <a href="index.html" class="btn btn-secondary btn-back-shop">
+                        <i class="fas fa-arrow-left"></i> Tiếp tục mua hàng
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-wrapper">
+                    <p>&copy; 2024 Flower Corner. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/checkout.js"></script>
+</body>
+</html>
+
